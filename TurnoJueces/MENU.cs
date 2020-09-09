@@ -140,6 +140,11 @@ namespace TurnoJueces
 
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("informacion del juzgado de control en mantenimiento..");
+        }
+
         private void button2_Click_1(object sender, EventArgs e)
         {
            CAUSA_PENAL2 RF = new CAUSA_PENAL2();

@@ -65,91 +65,91 @@ namespace TurnoJueces
 
         }//
 
-        public void imprimir()
-        {
+        //public void imprimir()
+        //{
             
-            Directory.Delete("C:\\pdf_datos_jueces\\", true);
-            PdfPTable pdfTable = new PdfPTable(dataGridView1.ColumnCount);
-            pdfTable.DefaultCell.Padding = 3;
-            pdfTable.WidthPercentage = 103;
-            pdfTable.HorizontalAlignment = Element.ALIGN_CENTER;
-            pdfTable.DefaultCell.BorderWidth = 1;
+        //    Directory.Delete("C:\\pdf_datos_jueces\\", true);
+        //    PdfPTable pdfTable = new PdfPTable(dataGridView1.ColumnCount);
+        //    pdfTable.DefaultCell.Padding = 3;
+        //    pdfTable.WidthPercentage = 103;
+        //    pdfTable.HorizontalAlignment = Element.ALIGN_CENTER;
+        //    pdfTable.DefaultCell.BorderWidth = 1;
 
-            foreach (DataGridViewColumn column in dataGridView1.Columns)
-            {
-                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
-                cell.BackgroundColor = new iTextSharp.text.BaseColor(137, 243, 126);
+        //    foreach (DataGridViewColumn column in dataGridView1.Columns)
+        //    {
+        //        PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+        //        cell.BackgroundColor = new iTextSharp.text.BaseColor(137, 243, 126);
 
-                pdfTable.AddCell(cell);
-            }
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                foreach (DataGridViewCell cell in row.Cells)
-                {
-                    pdfTable.AddCell(cell.Value.ToString());
-                }
-            }
+        //        pdfTable.AddCell(cell);
+        //    }
+        //    foreach (DataGridViewRow row in dataGridView1.Rows)
+        //    {
+        //        foreach (DataGridViewCell cell in row.Cells)
+        //        {
+        //            pdfTable.AddCell(cell.Value.ToString());
+        //        }
+        //    }
 
-            //Exporting to PDF
-            //string folderPath = "C:\\PDFs\\";
-            string folderPath = "C:\\pdf_datos_jueces\\";
-            if (!Directory.Exists(folderPath))
-            {
-                Directory.CreateDirectory(folderPath);
-            }
-            //using (FileStream stream = new FileStream(folderPath + "Datos_Jueces.pdf", FileMode.Create))
-            //{
-            //    Document pdfDoc = new Document(PageSize.A2, 10f, 10f, 10f, 0f);
-            //    PdfWriter.GetInstance(pdfDoc, stream);
-            //    pdfDoc.Open();
-            //    pdfDoc.Add(pdfTable);
-            //    pdfDoc.Close();
-            //    stream.Close();
-            //}
-            Document document = new Document(iTextSharp.text.PageSize.LEGAL.Rotate());
-            PdfWriter.GetInstance(document, new FileStream(folderPath + "Datos_Juecez.pdf", FileMode.OpenOrCreate));
-            document.Open();
-            // var fuente_texto = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 10);
-            //var boldFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18, Element.ALIGN_CENTER);
-            iTextSharp.text.Font fuente = new iTextSharp.text.Font();
-            document.Add(new Paragraph("                                                                                                REPORTE DE JUECES DEL JUZGADO DE CONTROL DE ACAPULCO"));
-            document.Add(new Paragraph("\n"));
-            document.Add(new Paragraph("\n"));
-            document.Add(pdfTable);
-
-
-            iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(@"C:\Recursos_TurnosJueces\21761930_1498902300203631_6112178357467530526_n.jpg");
-            imagen.BorderWidth = 0;
-            imagen.Alignment = Element.ALIGN_LEFT;
-            float percentage = 0.0f;
-            percentage = 80 / imagen.Width;
-            imagen.ScalePercent(percentage * 150);
-            imagen.SetAbsolutePosition(870, 510);
-
-            iTextSharp.text.Image imagen2 = iTextSharp.text.Image.GetInstance(@"C:\Recursos_TurnosJueces\12299228_1526794907618863_1923735897809301275_n.png");
-            imagen2.BorderWidth = 0;
-            imagen2.Alignment = Element.ALIGN_LEFT;
-            float percentage2 = 0.0f;
-            percentage2 = 80 / imagen2.Width;
-            imagen2.ScalePercent(percentage2 * 70);
-            imagen2.SetAbsolutePosition(50, 525);
-
-            // Insertamos la imagen en el documento
-            document.Add(imagen);
-            document.Add(imagen2);
-
-            document.Close();
-
-            //System.Diagnostics.Process.Start(@"C:\PDFs\Datos_Juecez.pdf");
-
-            MessageBox.Show("REPORTE GENERADO CORRECTAMENTE LISTO PARA ADJUNTAR EN EL CORREO", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        //    //Exporting to PDF
+        //    //string folderPath = "C:\\PDFs\\";
+        //    string folderPath = "C:\\pdf_datos_jueces\\";
+        //    if (!Directory.Exists(folderPath))
+        //    {
+        //        Directory.CreateDirectory(folderPath);
+        //    }
+        //    //using (FileStream stream = new FileStream(folderPath + "Datos_Jueces.pdf", FileMode.Create))
+        //    //{
+        //    //    Document pdfDoc = new Document(PageSize.A2, 10f, 10f, 10f, 0f);
+        //    //    PdfWriter.GetInstance(pdfDoc, stream);
+        //    //    pdfDoc.Open();
+        //    //    pdfDoc.Add(pdfTable);
+        //    //    pdfDoc.Close();
+        //    //    stream.Close();
+        //    //}
+        //    Document document = new Document(iTextSharp.text.PageSize.LEGAL.Rotate());
+        //    PdfWriter.GetInstance(document, new FileStream(folderPath + "Datos_Juecez.pdf", FileMode.OpenOrCreate));
+        //    document.Open();
+        //    // var fuente_texto = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 10);
+        //    //var boldFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18, Element.ALIGN_CENTER);
+        //    iTextSharp.text.Font fuente = new iTextSharp.text.Font();
+        //    document.Add(new Paragraph("                                                                                                REPORTE DE JUECES DEL JUZGADO DE CONTROL DE ACAPULCO"));
+        //    document.Add(new Paragraph("\n"));
+        //    document.Add(new Paragraph("\n"));
+        //    document.Add(pdfTable);
 
 
-        }
+        //    iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(@"C:\Recursos_TurnosJueces\21761930_1498902300203631_6112178357467530526_n.jpg");
+        //    imagen.BorderWidth = 0;
+        //    imagen.Alignment = Element.ALIGN_LEFT;
+        //    float percentage = 0.0f;
+        //    percentage = 80 / imagen.Width;
+        //    imagen.ScalePercent(percentage * 150);
+        //    imagen.SetAbsolutePosition(870, 510);
+
+        //    iTextSharp.text.Image imagen2 = iTextSharp.text.Image.GetInstance(@"C:\Recursos_TurnosJueces\12299228_1526794907618863_1923735897809301275_n.png");
+        //    imagen2.BorderWidth = 0;
+        //    imagen2.Alignment = Element.ALIGN_LEFT;
+        //    float percentage2 = 0.0f;
+        //    percentage2 = 80 / imagen2.Width;
+        //    imagen2.ScalePercent(percentage2 * 70);
+        //    imagen2.SetAbsolutePosition(50, 525);
+
+        //    // Insertamos la imagen en el documento
+        //    document.Add(imagen);
+        //    document.Add(imagen2);
+
+        //    document.Close();
+
+        //    //System.Diagnostics.Process.Start(@"C:\PDFs\Datos_Juecez.pdf");
+
+        //    MessageBox.Show("REPORTE GENERADO CORRECTAMENTE LISTO PARA ADJUNTAR EN EL CORREO", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+
+        //}
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            imprimir();
+            //imprimir();
         }
 
         private void btn_minimizar_Click(object sender, EventArgs e)
@@ -211,30 +211,30 @@ namespace TurnoJueces
 
             ////Exporting to PDF
             ////string folderPath = "C:\\PDFs\\";
-            string folderPath = "C:\\pdf_datos_jueces\\";
-            if (!Directory.Exists(folderPath))
-            {
-                Directory.CreateDirectory(folderPath);
-            }
+            //string folderPath = "C:\\pdf_datos_jueces\\";
+            //if (!Directory.Exists(folderPath))
+            //{
+            //    Directory.CreateDirectory(folderPath);
+            //}
            
-            Document document = new Document(iTextSharp.text.PageSize.LETTER);
-            PdfWriter.GetInstance(document, new FileStream(folderPath + "Datos_Juecez.pdf", FileMode.OpenOrCreate));
-            document.Open();
-            // var fuente_texto = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 10);
-            //var boldFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18, Element.ALIGN_CENTER);
-            iTextSharp.text.Font fuente = new iTextSharp.text.Font();
-            document.Add(new Paragraph(" REPORTE DE JUECES DEL JUZGADO DE CONTROL DE ACAPULCO"));
-            document.Add(new Paragraph("\n"));
-            document.Add(new Paragraph("\n"));
+            //Document document = new Document(iTextSharp.text.PageSize.LETTER);
+            //PdfWriter.GetInstance(document, new FileStream(folderPath + "Datos_Juecez.pdf", FileMode.OpenOrCreate));
+            //document.Open();
+            //// var fuente_texto = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 10);
+            ////var boldFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18, Element.ALIGN_CENTER);
+            //iTextSharp.text.Font fuente = new iTextSharp.text.Font();
+            //document.Add(new Paragraph(" REPORTE DE JUECES DEL JUZGADO DE CONTROL DE ACAPULCO"));
+            //document.Add(new Paragraph("\n"));
+            //document.Add(new Paragraph("\n"));
       
 
 
-            iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(openFileDialog1.FileName);
-            imagen.BorderWidth = 0;
-            imagen.Alignment = Element.ALIGN_LEFT;
-            float percentage = 0.0f;
-            percentage = 150 / imagen.Width;
-            imagen.ScalePercent(percentage * 80);
+            //iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(openFileDialog1.FileName);
+            //imagen.BorderWidth = 0;
+            //imagen.Alignment = Element.ALIGN_LEFT;
+            //float percentage = 0.0f;
+            //percentage = 150 / imagen.Width;
+            //imagen.ScalePercent(percentage * 80);
 
 
 
@@ -242,7 +242,7 @@ namespace TurnoJueces
             
          
 
-            document.Close();
+            //document.Close();
 
             //System.Diagnostics.Process.Start(@"C:\PDFs\Datos_Juecez.pdf");
 

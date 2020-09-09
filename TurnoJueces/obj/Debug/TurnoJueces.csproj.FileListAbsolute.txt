@@ -34,7 +34,6 @@ C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.MENU2.
 C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.CAUSA_PENAL2.resources
 C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.BUSQUEDAS.resources
 C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.MenuSolicitud.resources
-C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\itextsharp.dll
 C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.USUARIOS.resources
 C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.LOGIN2.resources
 C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.login_usuario_root.resources

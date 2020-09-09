@@ -44,31 +44,32 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.DT_FECHA_RECEP = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.DT_FECHA_RECEP = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TB_NUM_OFICIO = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cb_solicitud = new System.Windows.Forms.ComboBox();
-            this.TB_JUEZ = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.TB_DELITO = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tb_solicitud = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.TB_CARP_JUD = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TB_CARP_JUD = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_solicitud = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.TB_DELITO = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TB_JUEZ = new System.Windows.Forms.TextBox();
+            this.cb_solicitud = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).BeginInit();
@@ -163,6 +164,7 @@
             // BarraLateral
             // 
             this.BarraLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.BarraLateral.Controls.Add(this.button8);
             this.BarraLateral.Controls.Add(this.button7);
             this.BarraLateral.Controls.Add(this.button2);
             this.BarraLateral.Controls.Add(this.button6);
@@ -175,7 +177,7 @@
             this.BarraLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.BarraLateral.Location = new System.Drawing.Point(0, 50);
             this.BarraLateral.Name = "BarraLateral";
-            this.BarraLateral.Size = new System.Drawing.Size(261, 600);
+            this.BarraLateral.Size = new System.Drawing.Size(261, 705);
             this.BarraLateral.TabIndex = 1;
             this.BarraLateral.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraLateral_Paint);
             // 
@@ -239,7 +241,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 521);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 600);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -306,6 +308,15 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // DT_FECHA_RECEP
+            // 
+            this.DT_FECHA_RECEP.Enabled = false;
+            this.DT_FECHA_RECEP.Location = new System.Drawing.Point(33, 629);
+            this.DT_FECHA_RECEP.Margin = new System.Windows.Forms.Padding(4);
+            this.DT_FECHA_RECEP.Name = "DT_FECHA_RECEP";
+            this.DT_FECHA_RECEP.Size = new System.Drawing.Size(18, 22);
+            this.DT_FECHA_RECEP.TabIndex = 5;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -329,15 +340,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // DT_FECHA_RECEP
-            // 
-            this.DT_FECHA_RECEP.Enabled = false;
-            this.DT_FECHA_RECEP.Location = new System.Drawing.Point(45, 541);
-            this.DT_FECHA_RECEP.Margin = new System.Windows.Forms.Padding(4);
-            this.DT_FECHA_RECEP.Name = "DT_FECHA_RECEP";
-            this.DT_FECHA_RECEP.Size = new System.Drawing.Size(18, 22);
-            this.DT_FECHA_RECEP.TabIndex = 5;
             // 
             // label2
             // 
@@ -430,163 +432,17 @@
             this.groupBox1.Text = "DATOS";
             this.groupBox1.Visible = false;
             // 
-            // label9
+            // label26
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(36, 87);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(166, 18);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "TIPO DE SOLICITUD";
-            // 
-            // cb_solicitud
-            // 
-            this.cb_solicitud.FormattingEnabled = true;
-            this.cb_solicitud.Items.AddRange(new object[] {
-            "FORMULACION DE IMPUTACIÓN",
-            "ORDEN DE APREHENSIÓN",
-            "CONTROL DE DETENCIÓN"});
-            this.cb_solicitud.Location = new System.Drawing.Point(269, 87);
-            this.cb_solicitud.Margin = new System.Windows.Forms.Padding(4);
-            this.cb_solicitud.Name = "cb_solicitud";
-            this.cb_solicitud.Size = new System.Drawing.Size(391, 26);
-            this.cb_solicitud.TabIndex = 35;
-            // 
-            // TB_JUEZ
-            // 
-            this.TB_JUEZ.Enabled = false;
-            this.TB_JUEZ.Location = new System.Drawing.Point(280, 292);
-            this.TB_JUEZ.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_JUEZ.Name = "TB_JUEZ";
-            this.TB_JUEZ.Size = new System.Drawing.Size(328, 24);
-            this.TB_JUEZ.TabIndex = 16;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(144, 295);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 18);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "JUEZ";
-            // 
-            // TB_DELITO
-            // 
-            this.TB_DELITO.Enabled = false;
-            this.TB_DELITO.Location = new System.Drawing.Point(280, 222);
-            this.TB_DELITO.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_DELITO.Name = "TB_DELITO";
-            this.TB_DELITO.Size = new System.Drawing.Size(328, 24);
-            this.TB_DELITO.TabIndex = 8;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(127, 225);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 18);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "DELITO";
-            // 
-            // tb_solicitud
-            // 
-            this.tb_solicitud.Location = new System.Drawing.Point(495, 135);
-            this.tb_solicitud.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_solicitud.Name = "tb_solicitud";
-            this.tb_solicitud.Size = new System.Drawing.Size(17, 24);
-            this.tb_solicitud.TabIndex = 37;
-            this.tb_solicitud.Text = "1";
-            this.tb_solicitud.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(9, 185);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(194, 18);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "FECHA DE RECEPCION";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "DELITO DE ALTO IMPACTO",
-            "DELITO DE BAJO IMPACTO"});
-            this.comboBox1.Location = new System.Drawing.Point(269, 53);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(306, 26);
-            this.comboBox1.TabIndex = 38;
-            // 
-            // TB_CARP_JUD
-            // 
-            this.TB_CARP_JUD.Location = new System.Drawing.Point(280, 135);
-            this.TB_CARP_JUD.Margin = new System.Windows.Forms.Padding(4);
-            this.TB_CARP_JUD.Name = "TB_CARP_JUD";
-            this.TB_CARP_JUD.Size = new System.Drawing.Size(213, 24);
-            this.TB_CARP_JUD.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(27, 137);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 18);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "CARPETA JUDICIAL";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(42, 396);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 47);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 102;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(27, 55);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(184, 18);
-            this.label22.TabIndex = 39;
-            this.label22.Text = "ESTATUS DEL DELITO";
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label25.Location = new System.Drawing.Point(19, 446);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(120, 13);
-            this.label25.TabIndex = 103;
-            this.label25.Text = "VER ESTADISTICAS";
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(68, 262);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(126, 18);
+            this.label26.TabIndex = 41;
+            this.label26.Text = "DEPENDENCIA";
             // 
             // comboBox2
             // 
@@ -617,24 +473,189 @@
             this.comboBox2.Size = new System.Drawing.Size(259, 26);
             this.comboBox2.TabIndex = 40;
             // 
-            // label26
+            // label25
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(68, 262);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(126, 18);
-            this.label26.TabIndex = 41;
-            this.label26.Text = "DEPENDENCIA";
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label25.Location = new System.Drawing.Point(19, 446);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(120, 13);
+            this.label25.TabIndex = 103;
+            this.label25.Text = "VER ESTADISTICAS";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(27, 55);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(184, 18);
+            this.label22.TabIndex = 39;
+            this.label22.Text = "ESTATUS DEL DELITO";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(42, 396);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(64, 47);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 102;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(27, 137);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(161, 18);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "CARPETA JUDICIAL";
+            // 
+            // TB_CARP_JUD
+            // 
+            this.TB_CARP_JUD.Location = new System.Drawing.Point(280, 135);
+            this.TB_CARP_JUD.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_CARP_JUD.Name = "TB_CARP_JUD";
+            this.TB_CARP_JUD.Size = new System.Drawing.Size(213, 24);
+            this.TB_CARP_JUD.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "DELITO DE ALTO IMPACTO",
+            "DELITO DE BAJO IMPACTO"});
+            this.comboBox1.Location = new System.Drawing.Point(269, 53);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(306, 26);
+            this.comboBox1.TabIndex = 38;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(9, 185);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(194, 18);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "FECHA DE RECEPCION";
+            // 
+            // tb_solicitud
+            // 
+            this.tb_solicitud.Location = new System.Drawing.Point(495, 135);
+            this.tb_solicitud.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_solicitud.Name = "tb_solicitud";
+            this.tb_solicitud.Size = new System.Drawing.Size(17, 24);
+            this.tb_solicitud.TabIndex = 37;
+            this.tb_solicitud.Text = "1";
+            this.tb_solicitud.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(127, 225);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 18);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "DELITO";
+            // 
+            // TB_DELITO
+            // 
+            this.TB_DELITO.Enabled = false;
+            this.TB_DELITO.Location = new System.Drawing.Point(280, 222);
+            this.TB_DELITO.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_DELITO.Name = "TB_DELITO";
+            this.TB_DELITO.Size = new System.Drawing.Size(328, 24);
+            this.TB_DELITO.TabIndex = 8;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(144, 295);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 18);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "JUEZ";
+            // 
+            // TB_JUEZ
+            // 
+            this.TB_JUEZ.Enabled = false;
+            this.TB_JUEZ.Location = new System.Drawing.Point(280, 292);
+            this.TB_JUEZ.Margin = new System.Windows.Forms.Padding(4);
+            this.TB_JUEZ.Name = "TB_JUEZ";
+            this.TB_JUEZ.Size = new System.Drawing.Size(328, 24);
+            this.TB_JUEZ.TabIndex = 16;
+            // 
+            // cb_solicitud
+            // 
+            this.cb_solicitud.FormattingEnabled = true;
+            this.cb_solicitud.Items.AddRange(new object[] {
+            "FORMULACION DE IMPUTACIÓN",
+            "ORDEN DE APREHENSIÓN",
+            "CONTROL DE DETENCIÓN"});
+            this.cb_solicitud.Location = new System.Drawing.Point(269, 87);
+            this.cb_solicitud.Margin = new System.Windows.Forms.Padding(4);
+            this.cb_solicitud.Name = "cb_solicitud";
+            this.cb_solicitud.Size = new System.Drawing.Size(391, 26);
+            this.cb_solicitud.TabIndex = 35;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(36, 87);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(166, 18);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "TIPO DE SOLICITUD";
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(3, 462);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(270, 47);
+            this.button8.TabIndex = 9;
+            this.button8.Text = "INFORMACIÓN";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // MENU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(1282, 650);
+            this.ClientSize = new System.Drawing.Size(1282, 755);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox8);
@@ -705,5 +726,6 @@
         public System.Windows.Forms.TextBox TB_JUEZ;
         public System.Windows.Forms.ComboBox cb_solicitud;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button8;
     }
 }
