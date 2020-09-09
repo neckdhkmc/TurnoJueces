@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TurnosModel1StoreContainer" CdmEntityContainer="TurnosEntities2">
+    <EntitySetMapping Name="Jueces">
+      <EntityTypeMapping TypeName="TurnosModel1.Jueces">
+        <MappingFragment StoreEntitySet="Jueces">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+          <ScalarProperty Name="TOTAL_CARPETAS" ColumnName="TOTAL_CARPETAS" />
+          <ScalarProperty Name="FORMULACIONES" ColumnName="FORMULACIONES" />
+          <ScalarProperty Name="ORDENES_A" ColumnName="ORDENES_A" />
+          <ScalarProperty Name="CONTROL_DETENCION" ColumnName="CONTROL_DETENCION" />
+          <ScalarProperty Name="DELITO_ALTO_IMPACTO" ColumnName="DELITO_ALTO_IMPACTO" />
+          <ScalarProperty Name="DELITO_BAJO_IMPACTO" ColumnName="DELITO_BAJO_IMPACTO" />
+          <ScalarProperty Name="TOTAL_IMPUTADOS" ColumnName="TOTAL_IMPUTADOS" />
+          <ScalarProperty Name="TOTAL_VICTIMAS" ColumnName="TOTAL_VICTIMAS" />
+          <ScalarProperty Name="ESTATUS" ColumnName="ESTATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

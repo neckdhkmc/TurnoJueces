@@ -1,0 +1,9 @@
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\bin\Debug\Mensajeria.exe
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\bin\Debug\Mensajeria.pdb
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\bin\Debug\GoEmail.dll
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\obj\x86\Debug\Mensajeria.csprojResolveAssemblyReference.cache
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\obj\x86\Debug\Mensajeria.Properties.Resources.resources
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\obj\x86\Debug\Mensajeria.csproj.GenerateResource.Cache
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\obj\x86\Debug\Mensajeria.exe
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\obj\x86\Debug\Mensajeria.pdb
+C:\Users\Vladimir\Desktop\EnviarEmail\EnviarEmail\Mensajeria\obj\x86\Debug\Mensajeria.Form1.resources

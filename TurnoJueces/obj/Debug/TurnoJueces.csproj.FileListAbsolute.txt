@@ -1,0 +1,46 @@
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\bin\Debug\TurnoJueces.exe.config
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\bin\Debug\TurnoJueces.exe
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\bin\Debug\TurnoJueces.pdb
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.csprojResolveAssemblyReference.cache
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.Form1.resources
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.Properties.Resources.resources
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.csproj.GenerateResource.Cache
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.exe
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.pdb
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.CAUSA_PENAL.resources
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.DISPONIBILIDAD_JUECES.resources
+c:\users\informatica 3\documents\visual studio 2015\Projects\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.SPLASHSCREEN.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\TurnoJueces.exe.config
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\TurnoJueces.exe
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\TurnoJueces.pdb
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.DISPONIBILIDAD_JUECES.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.Properties.Resources.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.SPLASHSCREEN.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.csproj.GenerateResource.cache
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.exe
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.pdb
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.AGREGAR_JUEZ.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.MENU.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.EDITAR_REGISTROS.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.ESTADISTICAS.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\EntityFramework.dll
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\EntityFramework.xml
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.csproj.CopyComplete
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.csprojAssemblyReference.cache
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.tb_resul_control.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.MENU2.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.CAUSA_PENAL2.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.BUSQUEDAS.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.MenuSolicitud.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\itextsharp.dll
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.USUARIOS.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.LOGIN2.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.login_usuario_root.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.JUECES_NODISP.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\WhatsAppApi.dll
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.EditCausaPenal.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\bin\Debug\GoEmail.dll
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.CORREO.resources
+C:\Users\ingma\source\repos\TurnoJueces\TurnoJueces\obj\Debug\TurnoJueces.mensaje_carp_invest.resources

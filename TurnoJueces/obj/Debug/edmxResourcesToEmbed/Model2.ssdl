@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TurnosModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Turnos.dbo.Jueces' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Jueces">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar" MaxLength="50" />
+    <Property Name="TOTAL_CARPETAS" Type="int" />
+    <Property Name="FORMULACIONES" Type="int" />
+    <Property Name="ORDENES_A" Type="int" />
+    <Property Name="CONTROL_DETENCION" Type="int" />
+    <Property Name="DELITO_ALTO_IMPACTO" Type="int" />
+    <Property Name="DELITO_BAJO_IMPACTO" Type="int" />
+    <Property Name="TOTAL_IMPUTADOS" Type="int" />
+    <Property Name="TOTAL_VICTIMAS" Type="int" />
+    <Property Name="ESTATUS" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="TurnosModel1StoreContainer">
+    <EntitySet Name="Jueces" EntityType="Self.Jueces" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Jueces].[id] AS [id], 
+    [Jueces].[NOMBRE] AS [NOMBRE], 
+    [Jueces].[TOTAL_CARPETAS] AS [TOTAL_CARPETAS], 
+    [Jueces].[FORMULACIONES] AS [FORMULACIONES], 
+    [Jueces].[ORDENES_A] AS [ORDENES_A], 
+    [Jueces].[CONTROL_DETENCION] AS [CONTROL_DETENCION], 
+    [Jueces].[DELITO_ALTO_IMPACTO] AS [DELITO_ALTO_IMPACTO], 
+    [Jueces].[DELITO_BAJO_IMPACTO] AS [DELITO_BAJO_IMPACTO], 
+    [Jueces].[TOTAL_IMPUTADOS] AS [TOTAL_IMPUTADOS], 
+    [Jueces].[TOTAL_VICTIMAS] AS [TOTAL_VICTIMAS], 
+    [Jueces].[ESTATUS] AS [ESTATUS]
+    FROM [dbo].[Jueces] AS [Jueces]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
